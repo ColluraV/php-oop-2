@@ -1,6 +1,6 @@
 <?php 
 
-require_once __DIR__ . '/Product.php';
+require_once __DIR__ . '/Prodotto.php';
 class Gioco extends Prodotto{
 
     protected $materiale;
