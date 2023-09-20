@@ -4,16 +4,18 @@ require_once __DIR__ . '/Prodotto.php';
 
 
 $ProductList = array_map(function($el){
-    $Product = new Prodotto ($el['name'],$el['category'],$el['description'],$el['price'] );
-    $Product->nome =$el['nome'];
-    $Product->categoria =$el['categoria'];
-    $Product->prezzo = $el['prezzo'];
-    $Product->descrizione = $el['descrizione'];
+    $Product = new Prodotto ($el['name'],$el['thumb'],$el['category'],$el['description'],$el['price'] );
+    $Product->nome =$el['name'];
+    $Product->categoria =$el['category'];
+    $Product->prezzo = $el['price'];
+    $Product->descrizione = $el['description'];
   
     return $Product;
 },$rawProductList );
 
-    ?>
+
+
+?>
 
 
 
@@ -22,7 +24,7 @@ $ProductList = array_map(function($el){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dischi</title>
+    <title>petshop</title>
 
     <link rel="stylesheet" href="">
 
@@ -40,6 +42,10 @@ $ProductList = array_map(function($el){
     <?php
    
 
+   foreach ($ProductList as $prodotto) {
+    $printcard = $prodotto->printHTMLCard();
+ 
+  }
  
     ?>
     <script src=""></script>
