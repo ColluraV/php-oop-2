@@ -16,6 +16,17 @@ trait WithFormato{
         }
         if($this-> formato=="convenienza"){
             $this-> formato="EASY";
+
+            try {
+
+                if($this-> formato=="EASY"){
+                    throw new Exception('Troppo');
+                }
+            
+                }catch(Exception $e){
+                    echo $e->getMessage();
+                }
+
         }
         return $this-> formato;
     }

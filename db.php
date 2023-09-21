@@ -5,9 +5,16 @@
        require_once __DIR__."/Attrezzatura.php";
        require_once __DIR__."/Gioco.php";
 
-    
+    try {
+
     $cane = new Cani();
     $gatto = new Gatti();
+
+    }catch(Exception $e){
+        echo $e->getMessage();
+    }
+
+
 
 $rawProductList = [
     new Cibo(
@@ -28,6 +35,7 @@ $rawProductList = [
         formato: "medio",
 
     ),
+    
     new Cibo(
         name : "Smilla Cibo in Scatola",
         category:$gatto->getIcon(),
@@ -88,5 +96,3 @@ $rawProductList = [
     ),
    
     ];
-
-    ?>
