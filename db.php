@@ -12,49 +12,49 @@
 $rawProductList = [
     new Cibo(
         name : "Rocco Sticks",
-        category: "cani",
+        category:$cane->getIcon(),
         price:"6.50€",
         description:"Stick da masticare",
         thumb: "./imgs/rocco_sticks.jpg"
     ),
     new Cibo(
         name : "Rocco Cibo in Scatola",
-        category: "cani",
+        category:$cane->getIcon(),
         price:"10.99€",
         description:"Cibo per cani con gengive sensibili",
         thumb: "./imgs/rocco_sensitive.jpg"
     ),
     new Cibo(
         name : "Smilla Cibo in Scatola",
-        category: "gatti",
+        category:$gatto->getIcon(),
         price:"8.99€",
         description:"cibo per gatti in scatola",
         thumb: "./imgs/smilla_scatola.jpg"
     ),
     new Cibo(
         name : "Purizon Crocchette",
-        category: "gatti",
+        category:$gatto->getIcon(),
         price:"51.99€",
         description:"cibo per gatti in formato secco",
         thumb: "./imgs/purizon_cat.jpg"
     ),
     new Attrezzatura(
         name : "Museruola",
-        category: "cani",
+        category:$cane->getIcon(),
         price:"17.00€",
         description:"guinzaglio per cani",
         thumb: "./imgs/museruola.jpg"
     ),
     new Attrezzatura(
         name : "Tiragraffi",
-        category: "gatti",
+        category:$gatto->getIcon(),
         price:"99.99€",
         description:"tiragraffi Banana Gatti",
         thumb: "./imgs/tiragraffi.jpg"
     ),
     new Gioco(
         name : "Peluche per Gatti",
-        category: "gatti",
+        category:$gatto->getIcon(),
         price:"4.99€",
         description:"Topini dio peluche Trixie",
         thumb: "./imgs/peluche_topo.jpg",
@@ -63,7 +63,7 @@ $rawProductList = [
     ),
     new Gioco(
         name : "Pollo di Gomma",
-        category: "cani",        
+        category:$cane->getIcon(),        
         price:"10.99€",
         description:"Squezing pollo di gomma",
         thumb: "./imgs/pollo_gomma.jpg",

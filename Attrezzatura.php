@@ -9,14 +9,15 @@
         public $prezzo;
 
 
-        public function __construct( string $name, string $thumb ,string $category, string $description, string $price )
+        public function __construct (string $name, string $category, string $thumb,string $description, string $price,)
         {
-            $this->nome = $name;
-            $this->categoria = $category;
-            $this ->prezzo = $price;
-            $this->descrizione = $description;
-            $this->immagine = $thumb;
-    
+                $this->nome = $name;
+                $this->categoria = $category;
+                $this->img = $thumb;
+                $this->prezzo = $price;
+                $this->descrizione = $description;
+
+
         }
 
 

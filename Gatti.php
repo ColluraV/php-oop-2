@@ -2,7 +2,7 @@
     require_once __DIR__."/Categoria.php";
 
     class Gatti extends Categoria {
-        protected $icon;
+        public $icon;
 
         public function __construct()
         {
@@ -13,7 +13,7 @@
         /**
          * Get the value of icon
          */ 
-        public function geticon()
+        public function getIcon()
         {
                 return $this->icon;
         }
@@ -23,7 +23,7 @@
          *
          * @return  self
          */ 
-        public function seticon($icon)
+        public function setIcon($icon)
         {
                 $this->icon = $icon;
 

@@ -2,7 +2,7 @@
     require_once __DIR__."/Categoria.php";
 
     class Cani extends Categoria {
-        protected $icon;
+        public $icon;
 
         public function __construct()
         {

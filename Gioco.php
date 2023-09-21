@@ -11,18 +11,18 @@
         public $descrizione;
 
 
-
-        public function __construct( string $name, string $thumb ,string $category, string $description, string $price , string $material)
+        public function __construct (string $name, string $category, string $thumb,string $description, string $price, string $material)
         {
-            $this->nome = $name;
-            $this->categoria = $category;
-            $this ->prezzo = $price;
-            $this->descrizione = $description;
-            $this->immagine = $thumb;
-            $this->materiale = $material;
+                $this->nome = $name;
+                $this->categoria = $category;
+                $this->img = $thumb;
+                $this->prezzo = $price;
+                $this->descrizione = $description;
+                $this->materiale = $material;
 
-    
         }
+
+
 
 
         /**

@@ -1,7 +1,11 @@
 <?php
     require_once __DIR__."/Prodotto.php";
+    require_once __DIR__."/WithFormato.php";
+
 
     class Cibo extends Prodotto{
+        use WithFormato;
+
         public $img;
         public $prezzo;
         public $tipologia;
