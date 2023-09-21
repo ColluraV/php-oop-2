@@ -11,7 +11,7 @@
         public $descrizione;
 
 
-        public function __construct (string $name, string $category, string $thumb,string $description, string $price, string $material)
+        public function __construct (string $name, string $category, string $thumb,string $description, string $price, string $material, $formato)
         {
                 $this->nome = $name;
                 $this->categoria = $category;
@@ -19,6 +19,7 @@
                 $this->prezzo = $price;
                 $this->descrizione = $description;
                 $this->materiale = $material;
+                $this->formato = $formato;
 
         }
 
@@ -26,19 +27,19 @@
 
 
         /**
-         * Get the value of color
+         * Get the value of Material
          */ 
-        public function getColor()
+        public function getMaterial()
         {
                 return $this->materiale;
         }
 
         /**
-         * Set the value of color
+         * Set the value of Material
          *
          * @return  self
          */ 
-        public function setColor($material)
+        public function setMaterial($material)
         {
                 $this->materiale = $material;
 

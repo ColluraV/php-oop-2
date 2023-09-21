@@ -1,8 +1,5 @@
 <?php 
 trait WithFormato{
-    public static $Grande = "grande";
-    public static $Medio = "medio";
-    public static $Convenienza = "convenienza";
 
     protected $formato;
 
@@ -11,7 +8,18 @@ trait WithFormato{
     }
 
     public function getFormato(){
+        if($this-> formato=="grande"){
+            $this-> formato="XL";
+        }
+        if($this-> formato=="medio"){
+            $this-> formato="M";
+        }
+        if($this-> formato=="convenienza"){
+            $this-> formato="EASY";
+        }
         return $this-> formato;
     }
+
+
 
 }

@@ -1,6 +1,7 @@
 <?php
     require_once __DIR__."/Prodotto.php";
-    require_once __DIR__."/WithFormato.php";
+    require_once __DIR__."/TRAITS/WithFormato.php";
+
 
 
     class Cibo extends Prodotto{
@@ -11,14 +12,16 @@
         public $tipologia;
         public $brand;
         public $descrizione;
+         
 
-        public function __construct (string $name, string $category, string $thumb,string $description, string $price)
+        public function __construct (string $name, string $category, string $thumb,string $description, string $price, $formato)
         {
                 $this->nome = $name;
                 $this->categoria = $category;
                 $this->img = $thumb;
                 $this->prezzo = $price;
                 $this->descrizione = $description;
+                $this->formato = $formato;
 
         }
 

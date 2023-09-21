@@ -15,42 +15,54 @@ $rawProductList = [
         category:$cane->getIcon(),
         price:"6.50€",
         description:"Stick da masticare",
-        thumb: "./imgs/rocco_sticks.jpg"
+        thumb: "./imgs/rocco_sticks.jpg",
+        formato: "grande",
+
     ),
     new Cibo(
         name : "Rocco Cibo in Scatola",
         category:$cane->getIcon(),
         price:"10.99€",
         description:"Cibo per cani con gengive sensibili",
-        thumb: "./imgs/rocco_sensitive.jpg"
+        thumb: "./imgs/rocco_sensitive.jpg",
+        formato: "medio",
+
     ),
     new Cibo(
         name : "Smilla Cibo in Scatola",
         category:$gatto->getIcon(),
         price:"8.99€",
         description:"cibo per gatti in scatola",
-        thumb: "./imgs/smilla_scatola.jpg"
+        thumb: "./imgs/smilla_scatola.jpg",
+        formato: "convenienza",
+
     ),
     new Cibo(
         name : "Purizon Crocchette",
         category:$gatto->getIcon(),
         price:"51.99€",
         description:"cibo per gatti in formato secco",
-        thumb: "./imgs/purizon_cat.jpg"
+        thumb: "./imgs/purizon_cat.jpg",
+        formato:  "medio",
+
     ),
     new Attrezzatura(
         name : "Museruola",
         category:$cane->getIcon(),
         price:"17.00€",
         description:"guinzaglio per cani",
-        thumb: "./imgs/museruola.jpg"
+        thumb: "./imgs/museruola.jpg",
+        formato: "convenienza",
+
     ),
     new Attrezzatura(
         name : "Tiragraffi",
         category:$gatto->getIcon(),
         price:"99.99€",
         description:"tiragraffi Banana Gatti",
-        thumb: "./imgs/tiragraffi.jpg"
+        thumb: "./imgs/tiragraffi.jpg",
+        formato: "convenienza",
+
     ),
     new Gioco(
         name : "Peluche per Gatti",
@@ -58,7 +70,9 @@ $rawProductList = [
         price:"4.99€",
         description:"Topini dio peluche Trixie",
         thumb: "./imgs/peluche_topo.jpg",
-        material: "50% cotone, 50% poliestere"
+        material: "50% cotone, 50% poliestere",
+        formato: "grande",
+
     
     ),
     new Gioco(
@@ -67,7 +81,9 @@ $rawProductList = [
         price:"10.99€",
         description:"Squezing pollo di gomma",
         thumb: "./imgs/pollo_gomma.jpg",
-        material: "50% cotone, 50% poliestere"
+        material: "50% cotone, 50% poliestere",
+        formato: "grande",
+
 
     ),
    

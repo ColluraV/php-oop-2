@@ -40,11 +40,13 @@ require_once __DIR__ . './Categoria.php';
                 <?php foreach ($rawProductList as $product) { ?>
                     <div class="col text-center">
                         <div class="card h-100 rounded-4">
+                            <p> <?php echo $product->  getFormato() ?> </p>
                             <img src="<?php echo $product->img ?>" class="card-img-top rounded-4">
                             <div class="card-body d-flex flex-column">
                                 <h2><?php echo $product-> nome ?></h2>
                                 <h5 class="card-title mt-3"><?php echo $product-> descrizione ?> <?php echo $product-> categoria ?> </h5>
                                 <p class="card-text mt-auto"> <strong>Prezzo: </strong> <?php echo $product-> prezzo ?> </p>
+
                             </div>
                         </div>
                     </div>
