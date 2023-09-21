@@ -1,4 +1,5 @@
 <?php
+    require_once __DIR__."/Categoria.php";
 
 class Prodotto
 {
@@ -19,7 +20,7 @@ class Prodotto
         $this->immagine = $thumb;
 
     }
+
+
 }
-
-
 ?>

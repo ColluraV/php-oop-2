@@ -1,24 +1,52 @@
-<?php 
+<?php
+    require_once __DIR__."/Prodotto.php";
 
-require_once __DIR__ . '/Prodotto.php';
-class Gioco extends Prodotto{
+    class Gioco extends Prodotto{
 
-    protected $materiale;
+        public $materiale;
+        public $img;
+        public $prezzo;
+        public $tipologia;
+        public $brand;
+        public $descrizione;
 
 
-        public function __construct( $name, $thumb ,$category, $description, $price , $material)
+
+        public function __construct( string $name, string $thumb ,string $category, string $description, string $price , string $material)
         {
-
+            $this->nome = $name;
+            $this->categoria = $category;
+            $this ->prezzo = $price;
+            $this->descrizione = $description;
+            $this->immagine = $thumb;
             $this->materiale = $material;
 
-            parent::__construct($name, $thumb ,$category, $description, $price );   
+    
         }
-    
-        
-    }
-    
-    $polloGomma = new Gioco('Pollo di gomma','./imgs/pollo_gomma.jpg','cani','Squezing pollo di gomma','10.99€','Plastica');
-    $pelucheGatto = new Gioco('Peluche per Gatti','./imgs/peluche_topo.jpg','gatti','Topini dio peluche Trixie','4.99€','50% Cotone, 50% Poliestere');
 
-    echo var_dump($polloGomma);
+
+        /**
+         * Get the value of color
+         */ 
+        public function getColor()
+        {
+                return $this->materiale;
+        }
+
+        /**
+         * Set the value of color
+         *
+         * @return  self
+         */ 
+        public function setColor($material)
+        {
+                $this->materiale = $material;
+
+                return $this;
+        }
+
+       
+    }
+
+
 ?>
